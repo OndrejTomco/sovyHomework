@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="sovyjs.css">
+  </head>
+  <body>
+    <table>
+      <tr>
+        <td>Name</td>
+        <td><input id="nameField" type="text" name="" value=""></td>
+      </tr>
+      <tr>
+        <td>Surname</td>
+        <td><input id="surNameField" type="text" name="" value=""></td>
+      </tr>
+      <tr>
+        <td><button type="reset" name="button" onclick="deleteOutput()">reset</button></td>
+        <td><button id="submitBtn"type="button" name="button"  onmouseover="printMess()" onmouseout="removeText()">submit</button></td>
+      </tr>
+
+    </table>
+
+    <div id="output">
+
+    </div>
+
+    <div id="mess">
+
+    </div>
+
+    <script>
+var myDiv = document.getElementById('output');
+var messDiv = document.getElementById('mess');
+      function alertName() {
+        var myDiv = document.getElementById('output');
+        var name = document.getElementById('nameField').value;
+        var surName = document.getElementById('surNameField').value;
+        myDiv.innerHTML = 'lolols';
+      }
+
+      function deleteOutput(){
+        myDiv.innerHTML = '';
+      }
+
+      function printMess()
+      {
+        var messDiv = document.getElementById('mess');
+        messDiv.innerHTML = 'you hovered over';
+
+      }
+
+      function removeText() {
+        messDiv.innerHTML = '';
+      }
+    </script>
+  </body>
+</html>
