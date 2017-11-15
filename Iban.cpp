@@ -44,8 +44,7 @@ int main()
 		printf("Error");
 	}
 	else {
-	
-	
+		
 	char iban[20];
 	
 	for(i=0;i<10;i++) {
@@ -83,14 +82,14 @@ int main()
 	int z = 98-x;
 	//printf("\n%d", z);
 	
-	char ze = z%10;
-	char zf = z/10;
+	char c1 = z%10;
+	char c2 = z/10;
 	
 	char iban2[30];
 	iban2[0] = 'S';
 	iban2[1] = 'K';
-	iban2[2] = zf+48;
-	iban2[3] = ze+48;
+	iban2[2] = c2+48;
+	iban2[3] = c1+48;
 	for(i=4;i<8;i++) {
 		iban2[i] = bankNum[i-4];
 	}
