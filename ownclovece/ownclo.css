@@ -1,0 +1,28 @@
+.field {
+    width: 30px;
+    height:30px;
+    border-radius: 50%;
+    border: 2px solid;
+    margin-bottom: 5px;
+    float: left;
+    clear: both;
+}
+#first-row, #second-row, #third-row, #fourth-row {
+    float: left;
+    margin-left: 10px;
+}
+#no7,#no8,#no9,#no10, #no11 {
+    background-color: green;
+}
+
+
+#figure1 {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 1px solid;
+    background-color: red;
+    margin:0 auto;
+    margin-top:25%;
+    transition-duration: 1s;
+}
